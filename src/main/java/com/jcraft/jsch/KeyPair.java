@@ -121,9 +121,8 @@ public abstract class KeyPair {
 
         String _pubfile = pubfile;
         if (pubfile == null) {
-            if (new File(prvfile + ".pub").exists()) {
-                _pubfile = prvfile + ".pub";
-            } else if (new File(prvfile + "-cert.pub").exists()) {
+            _pubfile = prvfile + ".pub";
+             if (new File(prvfile + "-cert.pub").exists()) {
                 _pubfile = prvfile + "-cert.pub";
             }
         }
