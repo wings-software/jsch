@@ -303,6 +303,10 @@ public class KeyPairECDSA extends KeyPair{
     return null;
   }
 
+  public byte[] getSignature(byte[] data, String al){
+    return getSignature(data);
+  }
+
   public Signature getVerifier(){
     try{      
       Class c=Class.forName((String)jsch.getConfig("signature.ecdsa"));
@@ -324,6 +328,10 @@ public class KeyPairECDSA extends KeyPair{
       //System.err.println("e "+e);
     }
     return null;
+  }
+
+  public Signature getVerifier(String alg){
+    return getVerifier();
   }
 
   static KeyPair fromSSHAgent(JSch jsch, Buffer buf) throws JSchException {
