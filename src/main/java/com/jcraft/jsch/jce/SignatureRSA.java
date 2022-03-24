@@ -29,10 +29,6 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package com.jcraft.jsch.jce;
 
-import java.math.BigInteger;
-import java.security.*;
-import java.security.spec.*;
-
 public class SignatureRSA extends SignatureRSAN {
   String getName() {
     return "ssh-rsa";
