@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jcraft.harness</groupId>
-  <artifactId>jsch-0-1-55-harness-patch</artifactId>
+  <artifactId>jsch-0-1-54-harness-patch</artifactId>
   <packaging>jar</packaging>
   <version>1.2</version>
   <name>JSch</name>
