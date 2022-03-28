@@ -828,7 +828,11 @@ public abstract class KeyPair {
 
     public abstract byte[] getSignature(byte[] data);
 
+    public abstract byte[] getSignature(byte[] data, String alg);
+
     public abstract Signature getVerifier();
+
+    public abstract Signature getVerifier(String alg);
 
     public abstract byte[] forSSHAgent() throws JSchException;
 
