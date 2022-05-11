@@ -89,6 +89,7 @@ class UserAuthPublicKey extends UserAuth{
           for(int j=0; j<nonrsamethoda.length; j++){
             if(ipkmethod.equals(nonrsamethoda[j])){
               ipkmethoda=new String[]{ipkmethod};
+              break;
             }
           }
         }
