@@ -157,6 +157,7 @@ class UserAuthPublicKey extends UserAuth{
                   JSch.getLogger().log(Logger.DEBUG,
                           ipkmethoda[j] + " preauth failure command (" + command + ")");
                 }
+                continue loop3;
               }
             }
           }
